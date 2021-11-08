@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ch06</title>
+<script>
+	var popup = window.open("", "", "width=600, height=400");
+	
+	// 현재 모니터의 width 및 height를 구하기
+	var widthScreen = screen.width;
+	var heightScreen = screen.height;
+	
+	console.log(widthScreen + ":" + heightScreen);
+	
+	setTimeout(function() {
+		popup.moveTo(0,0);
+		popup.resizeTo(widthScreen, heightScreen);
+		setInterval(function() {
+			// 0.1초 마다 가운데를 기준으로 사이즈를 줄이기
+			popup.resizeBy(-20,-20);
+			popup.moveBy(10,10);
+		}, 100);
+	}, 1000)
+</script>
+</head>
+<body>
+	<h1>BOM(Browe Object Model)</h1>
+	<h2>2. screen 객체</h2>
+	
+</body>
+</html>
