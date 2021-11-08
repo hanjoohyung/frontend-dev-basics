@@ -16,7 +16,7 @@ MyObject.prototype.info = function() {
 
 // MyObject 객체 생성1
 var o1 = new MyObject("둘리", 10);
-01.school = 'DONGMYUNG';
+o1.school = 'DONGMYUNG';
 o1.info();
 
 // MyObject 객체 생성2
