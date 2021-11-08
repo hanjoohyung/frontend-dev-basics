@@ -73,9 +73,3 @@ console.log("==============");
 a5.forEach(function(e, index) {
     console.log(index + ":" + e);
 });
-
-console.log("==============");
-
-Array.prototype.forEach.call(o5, function(e, index){
-    console.log(index + ":" + e);
-});
