@@ -6,8 +6,8 @@
 <script>
 var registerEventHandler = function(element, eventName, eventHandler) {
 	element && 				// element가 null 혹은 undefined가 아니면
-	element.addEventListener &&  // <- ie8
-	element.addEventListener('on' + eventName, eventHandler);
+	element.attachEvent &&  // <- ie8
+	element.attachEvent('on' + eventName, eventHandler);
 	
 	element && 					 // element가 null 혹은 undefined가 아니면
 	element.addEventListener &&  // 표준 브라우저
