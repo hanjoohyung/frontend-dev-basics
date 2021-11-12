@@ -19,9 +19,9 @@ public class GuestbookController {
 		return "gb/ex2";
 	}
 	
-	// list
-		@RequestMapping("/ex3")
-		public String ex3() {
-			return "gb/ex3";
-		}
+	// delete
+	@RequestMapping("/ex3")
+	public String ex3() {
+		return "gb/ex3";
+	}
 }

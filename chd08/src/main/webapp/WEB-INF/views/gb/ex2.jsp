@@ -28,6 +28,7 @@ var fetch = function() {
 			
 			var html = listEJS.render(response);
 			$("#list-guestbook").append(html);
+
 			
 			startNo = $('#list-guestbook li').last().data('no') || 0;
 			console.log(startNo);
