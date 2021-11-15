@@ -75,5 +75,6 @@
 		<module>ch06</module>
 		<module>ch07</module>
 		<module>chd08</module>
+		<module>node-practices</module>
 	</modules>
 </project>
